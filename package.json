@@ -1,0 +1,9 @@
+{
+  "name": "rainy5-group",
+  "repository": "git@github.com:rainy5-group/rainy5-group.git",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

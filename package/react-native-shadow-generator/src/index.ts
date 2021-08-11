@@ -1,0 +1,2 @@
+export { generateShadow } from './generateShadow'
+
