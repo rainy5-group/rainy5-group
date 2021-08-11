@@ -1,2 +1,1 @@
-export { generateShadow } from './generateShadow'
-
+export { generateShadow } from "./generateShadow";
