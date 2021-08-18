@@ -50,6 +50,14 @@ const parseShadow = (penumbra) => {
 const interpolate = (i, a, b, a2, b2) => {
     return ((i - a) * (b2 - a2)) / (b - a) + a2;
 };
+/**
+ * Generates react-native shadow object and returns
+ * it for consumption
+ *
+ * @param elevation - android elevation equivalent from 1-24
+ * @param shadowColor - color string in hexadecimal format
+ * @returns Shadow object (example: https://github.com/ethercreative/react-native-shadow-generator)
+ */
 const generateShadow = (elevation, shadowColor) => {
     let depth = elevation - 1;
     if (elevation < 1) {

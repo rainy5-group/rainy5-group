@@ -7,13 +7,13 @@ More about object destructuring assignment: https://javascript.info/destructurin
 
 ## Installation
 
-```
+```bash
 yarn add @rainy5-group/react-native-shadow-generator
 ```
 
 or
 
-```
+```bash
 npm install @rainy5-group/react-native-shadow-generator
 ```
 
@@ -21,26 +21,34 @@ npm install @rainy5-group/react-native-shadow-generator
 
 ## Usage example
 
-```
-import { generateShadow } from "@rainy5-group/react-native-shadow-generator"
+```tsx
+import React from "react";
+import { View } from "react-native";
+import { generateShadow } from "@rainy5-group/react-native-shadow-generator";
 
-// ...
-// Your code goes here, of course you can destructure the generated shadow object in inline style
-// ...
+export const ShadowExampleComponent = () => {
+  return (
+    // Using shadow with StyleSheets
+    <View style={styles.containerShadow}>
+      {/* Using shadow inline */}
+      <View style={{ ...generateShadow(2) }} />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-  styleName: {
+  containerShadow: {
     // First parameter (number) sets the elevation of the shadow
     // Second parameter (string) is optional and sets the shadow color for the iOS devices
     // Simple object destructuring is used to unpack shadow styling where you want it
-    ...generateShadow(5)
-  }
-})
+    ...generateShadow(5),
+  },
+});
 ```
 
 Return value example for `generateShadow(1, "#FFFF00")`:
 
-```
+```javascript
 {
   "shadowColor": "#FFFF00",
   "shadowOffset": {

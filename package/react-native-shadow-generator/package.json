@@ -1,13 +1,16 @@
 {
+  "version": "1.0.2",
   "name": "@rainy5-group/react-native-shadow-generator",
   "author": "Darius Rainys <darapsas@gmail.com>",
   "description": "React native shadow generator helper",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rainy5-group/rainy5-group.git",
     "directory": "packages/react-native-shadow-generator"
   },
-  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
