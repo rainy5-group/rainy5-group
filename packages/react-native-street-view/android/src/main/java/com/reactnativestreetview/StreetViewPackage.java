@@ -17,6 +17,6 @@ public class StreetViewPackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Arrays.<ViewManager>asList(new StreetViewViewManager());
+        return Arrays.<ViewManager>asList(new StreetViewManager());
     }
 }

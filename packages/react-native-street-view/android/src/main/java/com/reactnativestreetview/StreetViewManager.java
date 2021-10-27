@@ -9,8 +9,8 @@ import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 
-public class StreetViewViewManager extends SimpleViewManager<View> {
-    public static final String REACT_CLASS = "StreetViewView";
+public class StreetViewManager extends SimpleViewManager<View> {
+    public static final String REACT_CLASS = "StreetView";
 
     @Override
     @NonNull

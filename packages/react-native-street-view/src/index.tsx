@@ -16,9 +16,9 @@ type StreetViewProps = {
   style: ViewStyle;
 };
 
-const ComponentName = 'StreetViewView';
+const ComponentName = 'StreetView';
 
-export const StreetViewView =
+export const StreetView =
   UIManager.getViewManagerConfig(ComponentName) != null
     ? requireNativeComponent<StreetViewProps>(ComponentName)
     : () => {
