@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 import { StyleSheet, View } from 'react-native';
-import { StreetViewView } from 'react-native-street-view';
+import { StreetView } from 'react-native-street-view';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <StreetViewViewManager color="#32a852" style={styles.box} />
+      <StreetViewManager color="#32a852" style={styles.box} />
     </View>
   );
 }

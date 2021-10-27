@@ -11,11 +11,11 @@ npm install react-native-street-view
 ## Usage
 
 ```js
-import { StreetViewView } from "react-native-street-view";
+import { StreetView } from "react-native-street-view";
 
 // ...
 
-<StreetViewView color="tomato" />
+<StreetView color="tomato" />
 ```
 
 ## Contributing

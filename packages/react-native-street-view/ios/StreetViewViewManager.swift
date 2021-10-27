@@ -1,12 +1,12 @@
-@objc(StreetViewViewManager)
-class StreetViewViewManager: RCTViewManager {
+@objc(StreetViewManager)
+class StreetViewManager: RCTViewManager {
 
-  override func view() -> (StreetViewView) {
-    return StreetViewView()
+  override func view() -> (StreetView) {
+    return StreetView()
   }
 }
 
-class StreetViewView : UIView {
+class StreetView : UIView {
 
   @objc var color: String = "" {
     didSet {
