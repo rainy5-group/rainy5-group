@@ -1,13 +1,14 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
   if (project == rootProject) {
     repositories {
       google()
       mavenCentral()
-      jcenter()
     }
 
     dependencies {
-      classpath 'com.android.tools.build:gradle:3.5.3'
+      classpath("com.android.tools.build:gradle:4.2.2")
     }
   }
 }
@@ -19,10 +20,13 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-  compileSdkVersion safeExtGet('StreetView_compileSdkVersion', 29)
+  compileSdkVersion safeExtGet('StreetView_compileSdkVersion', 30)
+  ndkVersion safeExtGet('StreetView_ndkVersion', "21.4.7075529")
+  buildToolsVersion safeExtGet('StreetView_buildToolsVersion', "30.0.3")
+
   defaultConfig {
-    minSdkVersion safeExtGet('StreetView_minSdkVersion', 16)
-    targetSdkVersion safeExtGet('StreetView_targetSdkVersion', 29)
+    minSdkVersion safeExtGet('StreetView_minSdkVersion', 21)
+    targetSdkVersion safeExtGet('StreetView_targetSdkVersion', 30)
     versionCode 1
     versionName "1.0"
   }
@@ -35,10 +39,6 @@ android {
   lintOptions {
     disable 'GradleCompatible'
   }
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-  }
 }
 
 repositories {
@@ -49,7 +49,6 @@ repositories {
   }
   google()
   mavenCentral()
-  jcenter()
 }
 
 dependencies {
