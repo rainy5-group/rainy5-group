@@ -1,9 +1,8 @@
 package com.reactnativestreetview;
 
 import android.graphics.Color;
+import android.support.annotation.NonNull;
 import android.view.View;
-
-import androidx.annotation.NonNull;
 
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
