@@ -118,9 +118,11 @@
         "error",
         {
           "quoteProps": "consistent",
-          "singleQuote": true,
           "tabWidth": 2,
-          "trailingComma": "es5",
+          "singleQuote": true,
+          "jsxBracketSameLine": true,
+          "trailingComma": "all",
+          "arrowParens": "avoid",
           "useTabs": false
         }
       ]
@@ -133,11 +135,11 @@
   "prettier": {
     "quoteProps": "consistent",
     "tabWidth": 2,
-    "bracketSpacing": false,
     "jsxBracketSameLine": true,
     "singleQuote": true,
     "trailingComma": "all",
-    "arrowParens": "avoid"
+    "arrowParens": "avoid",
+    "useTabs": false
   },
   "react-native-builder-bob": {
     "source": "src",

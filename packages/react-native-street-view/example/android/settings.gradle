@@ -1,6 +1,6 @@
-rootProject.name = 'StreetViewExample'
+rootProject.name = 'Example'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 
-include ':reactnativestreetview'
-project(':reactnativestreetview').projectDir = new File(rootProject.projectDir, '../../android')
+include ':react-native-street-view'
+project(':react-native-street-view').projectDir = new File(rootProject.projectDir, '../../android')
