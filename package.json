@@ -3,7 +3,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/aws-amplify/amplify-js.git"
+    "url": "https://github.com/rainy5-group/rainy5-group"
   },
   "workspaces": {
     "packages": [
