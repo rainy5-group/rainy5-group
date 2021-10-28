@@ -1,6 +1,6 @@
 {
   "name": "@rainy5-group/react-native-street-view",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React native street view component with event listening capability",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
